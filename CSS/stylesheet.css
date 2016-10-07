@@ -185,10 +185,34 @@ html {
 
 }
 .bycolor {
-	height:20px;
-	width:20px;
-	border:1px solid black;
-	margin:0px 2px 20px;
+	height:22px;
+	width:22px;
+	margin:0px 4px 20px;
+	border-radius: 2px;
+}
+.bycolor:first-child{
+	background-color: #f40b32;
+}
+.bycolor:nth-child(2) {
+	background-color: rgb(225,127,0);	
+}
+.bycolor:nth-child(3){
+	background-color: #f3cc0c;
+}
+.bycolor:nth-child(4) {
+	background-color: #0ac20a;
+}
+.bycolor:nth-child(5){
+	background-color: #0cccf3;
+}
+.bycolor:nth-child(6) {
+	background-color: #a60cf3;
+}
+.bycolor:nth-child(7) {
+	background-color: #000000;
+}
+.bycolor:nth-child(8) {
+	background-color: #fff;
 }
 
 #country {
