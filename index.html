@@ -10,13 +10,14 @@
 <body>
 <div id="whole_enchilada">
 	<div id="top_bar">
-			<div class="logo"></div>
+			<img src="..images/etsy_logo_sm-rgb.png" alt="Etsy">
 			<div class="search"></div>
+			<div class="button">Search</div>			
 			<ul class="buysell">
-					<li>sell on etsy</li>
-					<li>register</li>
+					<li>Sell on Etsy</li>
+					<li>Register</li>
 			</ul>			
-			<div class="signin"></div>
+			<div class="signin">Sign In</div>
 			<div class="cart"></div>
 	</div>
 	<ul id="navbar">
@@ -31,7 +32,7 @@
 	</ul>
 	<div id ="column_container">
 		<div class="col1">
-						<div id="catcontainer"
+			<div id="catcontainer"
 				<p id="allcats">All Catogories</p>
 				<ul id="categories">
 					<li class="cats">Home & Living</li>
@@ -50,40 +51,157 @@
 					<li class="cats">Toys & Games</li>
 					<li class="cats">Pet Supplies</li>
 				</ul>
-			</div>		
+			</div>	
+			<p id="refine"> Refine Your Search</p>	
 			<div id="refinestuff">
-					<p id="refine"> Refine Your Search</p>
+					
 					<div class="filters">
 						<p class="refinetitles">Shop Location</p>
+						<ul class="torefine">
+							<li> 
+								<input type="radio" name="Anywhere" id="anywhere">
+								<label for="anywhere">Anywhere</label>
+							</li>
+							<li>
+								<input type="radio" name="us" id="us">
+								<label for="us">United States</label>
+							</li>
+						</ul>
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Item Type</p>
+							<ul class="torefine">
+							<li> 
+								<input type="radio" name="Allitems" id="Allitems">
+								<label for="Allitems">All Items</label>
+							</li>
+							<li>
+								<input type="radio" name="handmade" id="handmade">
+								<label for="us">Handmade</label>
+							</li>
+							<li>
+								<input type="radio" name="vintage" id="vintage">
+								<label for="us">Vintage</label>
+							</li>
+						</ul>
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Price ($)</p>
+							<ul class="torefine">
+							<li> 
+								<input type="radio" name="Anyprice" id="Anyprice">
+								<label for="Anyprice">Anyprice</label>
+							</li>
+							<li>
+								<input type="radio" name="under25" id="under25">
+								<label for="under25">Under $25</label>
+							</li>
+							<li>
+								<input type="radio" name="25_50" id="25_50">
+								<label for="25_50">$25 to $50</label>
+							</li>
+							<li>
+								<input type="radio" name="50_100" id="50_100">
+								<label for="50_100">$50 to $100</label>
+							</li>
+							<li>
+								<input type="radio" name="over100" id="over100">
+								<label for="over100">Over $100</label>
+							</li>
+							<p class="price">
+								<input type="text" name="low" id="low">
+								
+							</p>
+							<p class="price">
+								<input type="text" name="high" id="high">
+								
+							</p>
+						</ul>
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Filter by Color</p>
+							<ul class="colors">
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+								<div class="bycolor"></div>
+
+							</ul>
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Ordering options</p>
+							<ul class="torefine">
+							<li> 
+								<input type="radio" name="giftcards" id="giftcards">
+								<label for="giftcards">Accepts Etsy gift cards</label>
+							</li>
+							<li>
+								<input type="radio" name="custom" id="custom">
+								<label for="custom">Customizable</label>
+							</li>
+						</ul>
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Ship To</p>
+							<select id="country" name="country"></select>
+
 					</div>	
 			</div>
 
 		</div>			
 	
 		<div class="col2">
-			<div class="realated_to_whiskey"></div>
-			<div class="shops"></div>
-			<div class="numbers"></div>
-			<div class="subscribe"></div>
+			<div id="allpics">
+				<div class="pics"></div>
+				<div class="pics"></div>
+				<div class="pics"></div>
+				<div class="pics"></div>
+				<div class="pics"></div>
+				<div class="pics"></div>
+				<div class="pics"></div>
+				<div class="pics"></div>
+			</div>	
+			<div id="bottomstuff">		
+				<div class="related_to_whiskey">
+					<p class="whiskey">Related to whiskey</p>
+						<p class="whiskey">
+							<ul>
+								<li>whiskey barrel</li>
+								<li>whiskey decanter</li>
+								<li>scotch</li>
+							</ul>
+						</p>	
+					<ul>
+						<li>bourbon</li>
+						<li>whiskey stones</li>
+						<li>jack daniels</li>
+					</ul>
+					<ul>
+						<li>cigar</li>
+						<li>beer</li>
+						<li>mens</li>
+					</ul>
+				</div>
+				<div class="shops">
+					<p>Looking for shops? WhiskeyDogWares, whiskeygingerco, whiskeynweddingbells. See more.</p>
+				</div>
+				<div class="numbers"></div>
+				<div class="subscribe">
+					<p class="bottom">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
+					<div class="bottomsearch"></div>
+					<div class="bottombutton">Subscribe</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 	<script type="text/javascript" src="javascript.js"></script>
+	<script src="js/List_Country_State_master/countries.js"></script>
+
 </body>
 </html>
