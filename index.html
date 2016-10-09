@@ -32,7 +32,9 @@
 		<li class ="navitem">Kids & Baby</li>
 		<li class ="navitem">Vintage</li>
 	</ul>
+	<p class="results"> Show results for: </p>
 	<div id ="column_container">
+
 		<div class="col1">
 			<div id="catcontainer"
 				<p id="allcats">All Catogories</p>
@@ -69,6 +71,7 @@
 								<label for="us">United States</label>
 							</li>
 						</ul>
+						<p><a href="#">Choose a custom location</a></p>
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Item Type</p>
@@ -89,7 +92,7 @@
 					</div>
 					<div class="filters">
 						<p class="refinetitles">Price ($)</p>
-							<ul class="torefine">
+						<ul class="torefine">
 							<li> 
 								<input type="radio" name="Anyprice" id="Anyprice">
 								<label for="Anyprice">Anyprice</label>
@@ -110,14 +113,14 @@
 								<input type="radio" name="over100" id="over100">
 								<label for="over100">Over $100</label>
 							</li>
-							<p class="price">
-								<input type="text" name="low" id="low">
-								
-							</p>
-							<p class="price">
-								<input type="text" name="high" id="high">
-								
-							</p>
+						
+							<div id="range">
+								<input class="price" type="text" name="low" id="low" placeholder="Low">	
+								<p class="to"> to </p>
+							
+								<input class="price type="text" name="high" id="high" placeholder="High">	
+								<button ></button>
+							</div>
 						</ul>
 					</div>
 					<div class="filters">
@@ -155,33 +158,51 @@
 		</div>				
 		<div class="col2">
 			<div id="allpics">	
-
-			</div>	
+				
+			</div>
 			<div id="bottomstuff">		
-				<div class="related_to_whiskey">
-					<p class="whiskey">Related to whiskey</p>
-						<p class="whiskey">
-							<ul>
-								<li>whiskey barrel</li>
-								<li>whiskey decanter</li>
-								<li>scotch</li>
-							</ul>
-						</p>	
-					<ul>
-						<li>bourbon</li>
-						<li>whiskey stones</li>
-						<li>jack daniels</li>
-					</ul>
-					<ul>
-						<li>cigar</li>
-						<li>beer</li>
-						<li>mens</li>
-					</ul>
+				<p class="whiskey">Related to whiskey</p>
+				<div id="related_to_whiskey">
+						<ul class="whiskeyLinks1">
+							<li class='links'>whiskey barrel</li>
+							<li class='links'>whiskey decanter</li>
+							<li class='links'>scotch</li>
+							<li class='links'>bourbon</li>
+						</ul>
+						<ul class="whiskeyLinks2">
+							
+							<li class='links'>whiskey stones</li>
+							<li class='links'>jack daniels</li><li class='links'>cigar</li>
+							<li class='links'>beer</li>
+						</ul>
+						<ul class="whiskeyLinks3">
+							
+							<li class='links'>gifts for men</li>
+						</ul>
+					
 				</div>
 				<div class="shops">
-					<p>Looking for shops? WhiskeyDogWares, whiskeygingerco, whiskeynweddingbells. See more.</p>
+					<p>Looking for shops?  </p>
+					<p class="linklist"> 
+					<a class ="linklist" href="#"> WhiskeyDogWares,</a> 
+					<a class ="linklist" href="#" >whiskeygingerco,</a> 
+					<a class ="linklist" href="#" >whiskeynweddingbells,</a> 
+					<a class ="linklist" href="#"> See more...</a>
+					</p>
 				</div>
-				<div class="numbers"></div>
+				<div class="numbers">
+					<ul class="pagination">
+					  <li><a class="pages" href="#">«</a></li>
+					  <li><a class="pages" href="#">1</a></li>
+					  <li><a class="pages" class="active" href="#">2</a></li>
+					  <li><a class="pages" href="#">3</a></li>
+					  <li><a class="pages" href="#">4</a></li>
+					  <li><a class="pages" href="#">5</a></li>
+					  <li><a class="pages" href="#">6</a></li>
+					  <li><a class="pages" href="#">7</a></li>
+					  <li><a class="pages" href="#">»</a></li>
+					</ul>
+				</div>
 				<div class="subscribe">
 					<p class="bottom">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
 					<div class="bottomsearch"></div>

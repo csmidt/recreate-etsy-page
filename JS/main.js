@@ -29,3 +29,4 @@ function putInDom(data) {
 
 	$("#allpics").html(htmlStr)
 }
+

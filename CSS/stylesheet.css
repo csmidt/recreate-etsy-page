@@ -38,7 +38,7 @@ html {
 }
 
 .button {
-    background-color: rgb(52,168,196); /* Green */
+    background-color: #0192B5; /* Green */
     border: none;
     color: white;
     padding: 7px 32px;    
@@ -61,13 +61,13 @@ html {
 .buysell li {
 	width: 100px;
 	margin:auto;
-	color:rgb(52,168,196);
+	color:#0192B5;
 }
 
 .signin {
     background-color: #fff; /* Green */
     border: 1px solid rgb(52,168,196);
-    color: rgb(52,168,196);   
+    color: #0192B5;   
     text-decoration: none;
    	width: 90px;
     font-size: 15px;
@@ -84,7 +84,7 @@ html {
 	width:34px;
 	border-left: 1px solid rgb(119,119,119);
 	height:35px;
-	margin-left: 10px;
+	margin-left: 11px;
 	margin-top: 20px;
 }
 .cart > p {
@@ -119,13 +119,20 @@ html {
  	margin-top: 50px;
  }
 
+.results {
+	margin-bottom:-35px;
+	margin-left: 200px;
+
+}
  .col1 {
  	width:25%;
  	margin-right: 20px;
+
  }
 
 #catcontainer {
  	background-color: #fff;
+ 	padding-bottom: 10px;
  }
 
 #categories {
@@ -167,17 +174,44 @@ html {
 
 .torefine {
 	list-style: none;
-	color: rgb(52,168,196); 
+	color: #0192B5; 
 }
 
 .torefine li {
 	margin-top: 15px;
+
+}
+
+.torefine input[type=radio]:checked ~ .check {
+  border: 5px solid #fff;
+}
+a {
+	color: #0192B5;
+	margin-left: 45px;
 }
 
 .price {
-	width: 20px;
-	height: 10px;
-	border:1px solid rgb(205,201,198) ;
+	width: 65px;
+	height: 40px;
+	font-size: 13px;
+	color: #444;
+	border:1px solid rgb(205,201,198);
+	padding-top: 10px;
+	margin-top: 25px;
+	padding-left: 5px;
+}
+
+#range {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+
+}
+.to {
+	color:#444;
+	font-size: 14px;
+	margin-top: 35px;
 }
 .colors {
 	display: flex;
@@ -220,7 +254,7 @@ html {
 	width:230px;
 	height: 30px;
 	margin-bottom: 20px;
-
+	margin-left: 20px;
 }
 
  .col2 {
@@ -239,6 +273,7 @@ html {
 	height:200px;
 	position:absolute;
 	bottom: 50px;
+
 }
 
 #allpics .pics {
@@ -246,16 +281,36 @@ html {
 	background-color: #fff;
 	margin-bottom: 10px;
 	height: 300px;
-
-
 }
 
 #allpics .pics div {
 	width:220px;
 	height:250px;
 	position:relative;
-	
 }
+
+.pics {
+  position: relative;
+}
+
+.pics:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:165px;
+  width:60px;
+  height:30px;
+  opacity:0;
+ }
+
+.pics:hover:after  {
+  opacity: .5;
+}
+
+.pics:after {
+  background-color: red;
+}
+
 .description {
 	 width: 200px;
 	 white-space: nowrap;
@@ -272,49 +327,76 @@ html {
 	margin-left: 170px;
 	margin-bottom: -35px;
 	color: rgb(120,192,66);
-
 }
 
 #bottomstuff {
 	width: 100%;
 	height:500px;
-	border: 1px solid yellow;
 	margin-top: 100px;
 }
+.whiskey {
+	font-size: 18px;
+	color:#444;
+}
 
-.related_to_whiskey {
-	border:1px solid black;
+#related_to_whiskey {
 	height: 150px;
+	width: 100%;
+	margin-top: -20px;
+	display: flex;
+	flex-direction: row;		
+}
+
+.whiskeyLinks1,.whiskeyLinks2, .whiskeyLinks3 {	
+	list-style: none;
+	color:#0192B5;	
+}
+
+.whiskeyLinks1 {
+	margin-left: -40px;
+}
+
+.links {
+	margin-bottom: 20px;
+}
+
+.shops	{
+	height: 100px;
 	width: 100%;
 	margin-top: 20px;
 	display: flex;
-	color:rgb(52,168,196);
-
-}
-.whiskey {
-	margin-left: 0px;
+	flex-direction: row;
 }
 
-.related_to_whiskey > ul {
-	margin-top: 60px;
-	margin-left: 0px;
-	list-style: none;
+.linklist {
+	margin-left: 10px;
 }
-.shops{
-	border:1px solid black;
-	height: 100px;
-	width: 100%;
-	margin-top: 20px;
-	text-align: left;
-	
-}
+
 .numbers {
-	border:1px solid black;
 	height: 100px;
 	width: 100%;
-	margin-top: 20px;
-	
+	margin-top: -70px;
+	padding-top: 25px;
 }
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a.pages {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-left: 0px;
+    background-color: #fff;
+    border:1px solid #444;
+}
+
 .subscribe {
 	height: 100px;
 	width: 100%;
@@ -327,7 +409,7 @@ html {
 
 .bottomsearch {
 	width:420px;
-	border:1px solid rgb(205,201,198);
+	border:1px solid #0192B5;
 	height:30px;
 	margin-left: 250px;	
 	margin-top: 20px;
@@ -335,16 +417,17 @@ html {
 	background-color: #fff;
 }
 .bottombutton {
-    background-color: rgb(52,168,196); /* Green */
+    background-color: #0192B5; /* Green */
     border: none;
     color: white;
-    padding: 7px 32px;    
+    padding: 7px 25px;    
     text-decoration: none;
    	width: 110px;
     font-size: 15px;
     margin-top: -30px;
     height: 30px;
     margin-left: 600px;
+    border-radius: 2px;
 
 }	
 
